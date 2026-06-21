@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pull-Up Score Challenge</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<h1>🏆 Pull-Up Score Challenge</h1>
+
+<img src="assets/hero.png" alt="Pull Up Hero" class="hero">
+
+<div class="calculator">
+
+<label>Reps</label>
+<input id="reps" type="number">
+
+<label>Total Time (seconds)</label>
+<input id="time" type="number">
+
+<label>Swing Level</label>
+
+<select id="swing">
+<option value="1">Strict</option>
+<option value="0.95">Minor Swing</option>
+<option value="0.90">Moderate Swing</option>
+<option value="0.80">Major Swing</option>
+</select>
+
+<button onclick="calculateScore()">
+Calculate Score
+</button>
+
+<h2 id="result">
+Score: 0
+</h2>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
